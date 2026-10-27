@@ -1,0 +1,16 @@
+{
+  "name": "juniper-team",
+  "owner": {
+    "name": "Juniper Lane Goods data team"
+  },
+  "metadata": {
+    "description": "Skills, a data-quality reviewer and hooks for Juniper Lane's weekly KPI pipeline."
+  },
+  "plugins": [
+    {
+      "name": "juniper-data-kit",
+      "source": "./",
+      "description": "Four pipeline skills, the dq-reviewer agent and three hooks."
+    }
+  ]
+}

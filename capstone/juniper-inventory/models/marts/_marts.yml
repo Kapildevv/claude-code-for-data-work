@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fct_stock_on_hand
+    description: Stock on hand at the latest weekly count, one row per store and product.
+    columns:
+      - name: product_id
+        data_tests: [not_null]
+      - name: store_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_stores')
+                field: store_id
+
+  - name: mart_reorder_list
+    description: Stores and products at or below their reorder point, with a quantity to order in whole cases.
+    columns:
+      - name: order_quantity
+        data_tests: [not_null]
+
+  - name: mart_supplier_on_time
+    description: Deliveries per supplier and the share that arrived within the quoted lead time.
+    columns:
+      - name: supplier_id
+        data_tests: [unique, not_null]

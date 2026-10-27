@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "inventory": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--python",
+        "3.14",
+        "mcp-server-motherduck@1.1.0",
+        "--db-path",
+        "inventory.duckdb"
+      ],
+      "env": {}
+    }
+  }
+}

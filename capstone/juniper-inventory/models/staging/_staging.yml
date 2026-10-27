@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: stg_suppliers
+    columns:
+      - name: supplier_id
+        data_tests: [unique, not_null]
+
+  - name: stg_products
+    columns:
+      - name: product_id
+        data_tests: [unique, not_null]
+      - name: category
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [Tents, Sleeping, Packs, Footwear, Apparel, Cooking, Climbing, Accessories]
+      - name: supplier_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_suppliers')
+                field: supplier_id
+
+  - name: stg_stores
+    columns:
+      - name: store_id
+        data_tests: [unique, not_null]
+
+  - name: stg_stock_counts
+    columns:
+      - name: on_hand
+        data_tests: [not_null]
+
+  - name: stg_receipts
+    columns:
+      - name: receipt_id
+        data_tests: [unique, not_null]
+      - name: product_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_products')
+                field: product_id
+              config:
+                severity: warn

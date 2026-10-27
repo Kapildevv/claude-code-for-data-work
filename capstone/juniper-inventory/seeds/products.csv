@@ -1,0 +1,49 @@
+product_id,product_name,category,supplier_id,reorder_point,case_pack
+P001,Ridgeline 2-Person Tent,Tents,SUP1,5,4
+P002,Ridgeline 4-Person Tent,Tents,SUP1,5,4
+P003,Summit Ultralight 1-Person Tent,Tents,SUP1,3,4
+P004,Basecamp 6-Person Cabin Tent,Tents,SUP1,6,4
+P005,Trail Bivy Shelter,Tents,SUP1,6,2
+P006,Tent Footprint 2-Person,Tents,SUP1,5,3
+P007,Alpine 20F Down Sleeping Bag,Sleeping,SUP1,3,2
+P008,Meadow 40F Synthetic Sleeping Bag,Sleeping,SUP1,5,3
+P009,Self-Inflating Sleeping Pad,Sleeping,SUP1,5,4
+P010,Insulated Air Pad,Sleeping,SUP1,6,4
+P011,Camp Pillow,Sleeping,SUP1,3,2
+P012,Sleeping Bag Liner,Sleeping,SUP1,4,2
+P013,Switchback 28L Daypack,Packs,SUP2,4,3
+P014,Switchback 45L Backpack,Packs,SUP2,4,3
+P015,Expedition 65L Backpack,Packs,SUP2,5,4
+P016,Hydration Reservoir 2L,Packs,SUP2,6,2
+P017,Hip Pack 5L,Packs,SUP2,6,2
+P018,Pack Rain Cover,Packs,SUP2,6,3
+P019,Trailhead Hiking Boot Men's,Footwear,SUP3,4,4
+P020,Trailhead Hiking Boot Women's,Footwear,SUP3,3,4
+P021,Scree Trail Runner Men's,Footwear,SUP3,6,4
+P022,Scree Trail Runner Women's,Footwear,SUP3,4,3
+P023,Camp Sandal,Footwear,SUP3,5,4
+P024,Merino Hiking Socks 2-Pack,Footwear,SUP3,3,4
+P025,Storm Shell Rain Jacket,Apparel,SUP2,3,2
+P026,Ridge Fleece Jacket,Apparel,SUP2,4,4
+P027,Down Puffy Jacket,Apparel,SUP2,5,3
+P028,Quick-Dry Hiking Pants,Apparel,SUP2,3,4
+P029,Merino Base Layer Top,Apparel,SUP2,3,2
+P030,Sun Hoodie,Apparel,SUP2,5,2
+P031,Compact Canister Stove,Cooking,SUP1,12,12
+P032,Fuel Canister 230g,Cooking,SUP1,10,12
+P033,Titanium Cook Pot 1L,Cooking,SUP1,9,12
+P034,Camp Utensil Set,Cooking,SUP1,9,12
+P035,Insulated Camp Mug,Cooking,SUP1,8,12
+P036,Squeeze Water Filter,Cooking,SUP1,12,12
+P037,Climbing Harness,Climbing,SUP4,6,12
+P038,Belay Device,Climbing,SUP4,6,12
+P039,Locking Carabiner,Climbing,SUP4,12,12
+P040,Chalk Bag,Climbing,SUP4,7,12
+P041,Climbing Helmet,Climbing,SUP4,11,12
+P042,Dynamic Rope 60m,Climbing,SUP4,11,12
+P043,LED Headlamp 350 Lumen,Accessories,SUP5,6,12
+P044,Trekking Poles Pair,Accessories,SUP5,11,12
+P045,First-Aid Kit,Accessories,SUP5,10,12
+P046,Insulated Water Bottle 1L,Accessories,SUP5,10,12
+P047,Dry Bag 20L,Accessories,SUP5,11,12
+P048,Pocket Multi-Tool,Accessories,SUP5,12,12

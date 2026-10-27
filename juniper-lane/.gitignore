@@ -1,0 +1,15 @@
+# Secrets: never committed
+.env
+.env.*
+!.env.example
+
+# Environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# The nightly drop and everything built from it: regenerate with make_data.py
+data/
+*.duckdb
+*.duckdb.wal
+out/

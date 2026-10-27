@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(uv run dbt build)",
+      "Bash(uv run dbt build *)",
+      "Bash(uv run dbt test)",
+      "Bash(uv run dbt test *)",
+      "Bash(uv run python .claude/skills/reorder-list/scripts/reorder_summary.py)",
+      "PowerShell(git status *)",
+      "PowerShell(git diff *)",
+      "PowerShell(uv run dbt build)",
+      "PowerShell(uv run dbt build *)",
+      "PowerShell(uv run dbt test)",
+      "PowerShell(uv run dbt test *)",
+      "PowerShell(uv run python .claude/skills/reorder-list/scripts/reorder_summary.py)"
+    ],
+    "deny": [
+      "Edit(./seeds/**)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "PowerShell(git push *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project python \"${CLAUDE_PROJECT_DIR}/.claude/hooks/protect_seeds.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "plansDirectory": "./.claude/plans",
+  "autoMemoryEnabled": false,
+  "enabledPlugins": {
+    "juniper-data-kit@juniper-team": true
+  }
+}

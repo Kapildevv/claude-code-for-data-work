@@ -1,0 +1,9 @@
+[sqlfluff]
+dialect = duckdb
+rules = CP01, CP03, LT02, LT09, LT14
+
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.functions]
+extended_capitalisation_policy = lower

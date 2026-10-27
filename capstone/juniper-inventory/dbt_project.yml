@@ -1,0 +1,24 @@
+name: juniper_inventory
+version: "1.0.0"
+config-version: 2
+profile: juniper_inventory
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  juniper_inventory:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+seeds:
+  juniper_inventory:
+    receipts:
+      +column_types: {ordered_on: date, received_on: date}
+    stock_counts:
+      +column_types: {count_date: date}

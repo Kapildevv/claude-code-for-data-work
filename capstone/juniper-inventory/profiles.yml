@@ -1,0 +1,7 @@
+juniper_inventory:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: inventory.duckdb
+      threads: 4

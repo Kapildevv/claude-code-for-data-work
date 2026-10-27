@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "warehouse": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--python",
+        "3.14",
+        "mcp-server-motherduck@1.1.0",
+        "--db-path",
+        "warehouse.duckdb"
+      ],
+      "env": {}
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONTEXT7_API_KEY:-}"
+      }
+    }
+  }
+}

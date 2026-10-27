@@ -1,0 +1,13 @@
+{
+  "name": "juniper-data-kit",
+  "version": "1.0.0",
+  "description": "Juniper Lane's data kit: four skills for the weekly KPI pipeline, a data-quality reviewer, and three hooks that guard data/raw/, lint SQL and log every tool call.",
+  "author": {
+    "name": "Juniper Lane Goods data team"
+  },
+  "skills": "./.claude/skills/",
+  "agents": [
+    "./.claude/agents/dq-reviewer.md"
+  ],
+  "hooks": "./.claude/hooks/hooks.json"
+}

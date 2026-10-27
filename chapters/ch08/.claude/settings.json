@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "plansDirectory": "./.claude/plans",
+  "autoMemoryEnabled": false,
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(uv run python .claude/skills/profile-data/scripts/dq_profile.py)",
+      "PowerShell(git status *)",
+      "PowerShell(git diff *)",
+      "PowerShell(uv run python .claude/skills/profile-data/scripts/dq_profile.py)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "PowerShell(git push *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Edit(./data/raw/**)"
+    ]
+  }
+}
